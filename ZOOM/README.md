@@ -1,0 +1,18 @@
+- ZOOM을 만들어보고 싶다.
+  - 필요한 구성요소 탐색 -> 배경지식을 먼저 쌓아보자
+  - 각각의 기술 스택에 대해서, 왜 이런 조합인지 이해해보자
+  - 하나씩 깊게 파고들어보자. 프론트부터, 백엔드, 서버까지
+  - 애자일 방법론으로 완벽하진않아도 사이클을 최대한 돌려보자
+    - React, Angular, Vue.js 중 하나 - (상태 관리, Redux MobX Vuex)
+    - Node.js, Django, Flask, Spring, Ruby on Rails 중 하나
+    - MySQL, PostgreSQL, MongoDB 중 하나
+    - WebRTC
+    - AWS, GCP, Azure
+    - HTTPS, OAuth
+    - APIs (Login)
+    - Load balancing, Caching, CDN
+    - Docker, Kubernetes
+    - Socket Programming, Publisher Subscribe, socket.io, Redis (Message Broker)
+    - Jest, Mocha, Selenium
+    - Jira, Trello, Asana, GitHub
+    - H.264, VP8 (Opus, AAC)
