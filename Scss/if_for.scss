@@ -1,0 +1,17 @@
+$theme: dark;
+
+.button {
+  @if $theme == dark {
+    background-color: #000;
+    color: #fff;
+  } @else {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+@for $i from 1 through 3 {
+  .col-#{$i} {
+    width: $i * 33.333%;
+  }
+}

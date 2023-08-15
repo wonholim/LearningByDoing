@@ -1,0 +1,16 @@
+@mixin button-styles($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+  }
+  
+  .primary-button {
+    @include button-styles(#3498db, #fff);
+  }
+  
+  .secondary-button {
+    @include button-styles(#f39c12, #333);
+  }
+  

@@ -1,0 +1,8 @@
+$padding: 10px;
+$border-width: 2px;
+
+.container {
+  width: 300px - $border-width * 2; // 296px
+  padding: $padding; // 10px
+  border: $border-width solid #000; // 2px
+}

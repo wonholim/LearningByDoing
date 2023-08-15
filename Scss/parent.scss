@@ -1,0 +1,15 @@
+button {
+    padding: 10px;
+    background: blue;
+    color: white;
+  
+    &:hover {
+      background: darkblue;
+    }
+  
+    &.disabled {
+      background: gray;
+      cursor: not-allowed;
+    }
+  }
+  

@@ -1,0 +1,21 @@
+$primary-color: #3498db;
+$secondary-color: hsla(37, 82%, 47%, 0.534);
+$font-size: 16px;
+
+body {
+  font-size: $font-size;
+  color: $primary-color;
+}
+
+button {
+  background-color: $secondary-color;
+  font-size: $font-size;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}

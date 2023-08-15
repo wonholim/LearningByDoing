@@ -1,0 +1,17 @@
+%button-shared {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+  }
+  
+  .primary-button {
+    @extend %button-shared;
+    background-color: #3498db;
+  }
+  
+  .secondary-button {
+    @extend %button-shared;
+    background-color: #f39c12;
+  }
+  
