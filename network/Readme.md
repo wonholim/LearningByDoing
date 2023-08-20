@@ -12,8 +12,8 @@
 - [ ] 패킷 구조 구현
 - [x] Application Layer
   - [x] HTTP 프로토콜 생성 및 구현 
-- [ ] Transport Layer
-  - [ ] TCP 프로토콜 구현
+- [x] Transport Layer
+  - [x] TCP 프로토콜 구현
 - [ ] Internet Layer
 - [ ] Network Layer
 - [ ] 연결 수립을 위한 3-way-handshake 구현
