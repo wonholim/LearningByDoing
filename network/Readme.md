@@ -8,7 +8,7 @@
 
 - [x] 입력을 받는 Tmain 생성 및 구현
 - [x] TBrowser 생성 및 구현
-- [ ] 패킷 구조 구현
+- [x] 패킷 구조 구현
 - [x] Application Layer
   - [x] HTTP 프로토콜 생성 및 구현 
 - [x] Transport Layer
