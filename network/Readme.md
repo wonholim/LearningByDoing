@@ -6,7 +6,7 @@
 
 `시나리오` : (HTTP, Ethernet) 사용자의 요청 (GET) 을 서버가 받고, 응답하는 과정
 
-- [ ] 입력을 받는 Tmain 생성 및 구현
+- [xs] 입력을 받는 Tmain 생성 및 구현
 - [ ] TBrowser 생성 및 구현
 - [ ] TBrowser의 요청을 처리하는 server 생성 및 구현
 - [ ] 패킷 구조 구현
