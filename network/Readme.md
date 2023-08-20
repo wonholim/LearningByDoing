@@ -14,7 +14,7 @@
   - [x] HTTP 프로토콜 생성 및 구현 
 - [x] Transport Layer
   - [x] TCP 프로토콜 구현
-- [ ] Internet Layer
+- [x] Internet Layer
 - [ ] Network Layer
 - [ ] 연결 수립을 위한 3-way-handshake 구현
 - [ ] 연결 종료를 위한 4-way-handshake 구현
