@@ -7,10 +7,9 @@ export class TRouterB {
     constructor() {
         this.tRouterC = new TRouterC();
     }
-    next(frame: Frame): string {
+    next(frame: Frame): void {
         frame.Header.SourceMACAddress = "TRouterB";
         frame.Header.DestinationMacAddress = this.destinationMacAddress;
         this.tRouterC.next(frame);
-        return "";
     }
 }

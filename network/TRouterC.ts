@@ -1,17 +1,15 @@
 import {Frame} from "./TPacket";
-import {TServer} from "./TServer";
-import {TNetworkInterface} from "./TNetworkInterface";
+import {TSNetworkInterface} from "./TSNetworkInterface";
 
 export class TRouterC {
-    private tNetworkInterface: TNetworkInterface;
+    private tsNetworkInterface: TSNetworkInterface;
     private destinationMacAddress: string = "TNetworkInterface";
     constructor() {
-        this.tNetworkInterface = new TNetworkInterface();
+        this.tsNetworkInterface = new TSNetworkInterface();
     }
-    next(frame: Frame): string {
+    next(frame: Frame): void {
         frame.Header.SourceMACAddress = "TRouterC";
         frame.Header.DestinationMacAddress = this.destinationMacAddress;
-        this.tNetworkInterface.decapsulation(frame);
-        return "";
+        this.tsNetworkInterface.decapsulation(frame);
     }
 }

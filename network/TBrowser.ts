@@ -1,5 +1,4 @@
 import {TApplication} from "./TApplication";
-import {Message} from "./TNetworkInterface";
 
 /**
  * Browser 클래스
@@ -11,6 +10,7 @@ export class TBrowser {
         this.tApplicattion = new TApplication();
     }
 
+    /** Application 계층으로 URL을 전송 */
     public run(url: string): string {
         this.tApplicattion.encapsulation(url);
 

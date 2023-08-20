@@ -1,6 +1,7 @@
 import {Frame, IPDataGram} from "./TPacket";
 import {TRouterA} from "./TRouterA";
 
+
 export class TNetworkInterface {
     private tRouterA: TRouterA;
     private destinationMacAddress: string = "TRouterA";

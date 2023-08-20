@@ -1,15 +1,15 @@
 import {TInternet} from "./TInternet";
 import {Message, TCPSegment} from "./TPacket";
+import {TApplication} from "./TApplication";
 
 
 export class TTransport {
     private tInternet: TInternet;
-
     constructor() {
         this.tInternet = new TInternet();
     }
 
-    public encapsulation(message: Message): string {
+    public encapsulation(message: Message): void {
         /** TCP 프로토콜만 구현 */
         const tcpSegment: TCPSegment = {
             Header: {
@@ -25,7 +25,5 @@ export class TTransport {
         };
 
         this.tInternet.encapsulation(tcpSegment);
-
-        return "";
     }
 }
