@@ -1,0 +1,17 @@
+name: BackEnd-TEST
+
+on:
+  push:
+    branches: 'BE/*'
+  pull_request:
+    branches: 'develop'
+
+jobs:
+  check-run:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Check Node.js version
+      run: node -v
+    - name: Print Hello World
+      run: echo "잘 작동합니다"
