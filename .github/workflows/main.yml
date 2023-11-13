@@ -1,17 +1,30 @@
-name: BackEnd-TEST
+name: BackEnd-CI
 
 on:
   push:
-    branches: 'BE/*'
+    branches: 'feature/*'
   pull_request:
     branches: 'develop'
-
+    types: [labeled, opened, synchronize, reopened]
+  
 jobs:
-  check-run:
+  test:
+    if: contains(github.event.pull_request.labels.*.name, '💻백엔드')
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
-    - name: Check Node.js version
-      run: node -v
-    - name: Print Hello World
-      run: echo "잘 작동합니다"
+    - name: 코드 체크아웃
+      uses: actions/checkout@v2
+
+    - name: node 세팅
+      uses: actions/setup-node@v1
+      with:
+        node-version: '18'
+
+    - name: 의존성 설치
+      run: npm install
+      working-directory: ./back-end
+
+    - name: 테스트 진행
+      run: npm test
+      working-directory: ./back-end
