@@ -23,8 +23,8 @@ jobs:
 
     - name: 의존성 설치
       run: npm install
-      working-directory: ./BackEnd
+      working-directory: ./back-end
 
     - name: 테스트 진행
       run: npm test
-      working-directory: ./BackEnd
+      working-directory: ./back-end
